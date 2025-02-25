@@ -1,0 +1,6 @@
+public static void main(String[] args) {
+    MarcoSeleccionMultiple2 marcoSeleccionMultiple = new MarcoSeleccionMultiple2();
+    marcoSeleccionMultiple.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
+    marcoSeleccionMultiple.setSize(350, 150); // establece el tamaño del marco
+    marcoSeleccionMultiple.setVisible(true); // muestra el marco
+}
