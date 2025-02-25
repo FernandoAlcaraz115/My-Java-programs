@@ -47,7 +47,6 @@ public class CalculadoraPropinas {
                             JOptionPane.ERROR_MESSAGE
                         );
                     }
-                    //En dado caso de que la entrada sea un numero negativo, se le notificara al usuario
                 } catch (NumberFormatException e) {
                     JOptionPane.showMessageDialog(
                         null, 

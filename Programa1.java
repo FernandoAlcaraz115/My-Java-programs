@@ -2,7 +2,7 @@ import javax.swing.JOptionPane;
 import javax.swing.UIManager;
 import javax.swing.plaf.ColorUIResource;
 
-public class HelloWorld {
+public class Programa1 {
     public static void main(String[] args) {
         // Configurar el color de fondo del cuadro de diálogo
         UIManager.put("Panel.background", new ColorUIResource(255, 255, 255));
