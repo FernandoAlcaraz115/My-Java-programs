@@ -1,12 +1,12 @@
 import java.awt.FlowLayout;
-import java.awt.event.ActionListener;
 import java.awt.event.ActionEvent;
+import java.awt.event.ActionListener;
+import javax.swing.DefaultListModel;
+import javax.swing.JButton;
 import javax.swing.JFrame;
 import javax.swing.JList;
-import javax.swing.JButton;
 import javax.swing.JScrollPane;
 import javax.swing.ListSelectionModel;
-import javax.swing.DefaultListModel;
 
 public class MarcoSeleccionMultiple2 extends JFrame {
     private final JList<String> listaJListColores; // lista para guardar los nombres de los colores
@@ -29,7 +29,7 @@ public class MarcoSeleccionMultiple2 extends JFrame {
 
         botonJButtonCopiar = new JButton("Copiar >>>");
         botonJButtonCopiar.addActionListener(
-            new ActionListener() { // clase interna anónima
+            new ActionListener() {
                 // maneja evento de botón
                 @Override
                 public void actionPerformed(ActionEvent evento) {
