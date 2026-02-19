@@ -1,13 +1,13 @@
 import java.awt.FlowLayout;
 import java.awt.event.ActionEvent;
 import java.awt.event.ActionListener;
-import javax.swing.DefaultListModel;
+import javax.swing.DefaultListModel;//Para almacenar los colores copiados
 import javax.swing.JButton;
 import javax.swing.JFrame;
-import javax.swing.JList;
+import javax.swing.JList;//Agrega los colores copiados
 import javax.swing.JScrollPane;
 import javax.swing.ListSelectionModel;
-
+    
 public class MarcoSeleccionMultiple2 extends JFrame {
     private final JList<String> listaJListColores; // lista para guardar los nombres de los colores
     private final JList<String> listaJListCopia; // lista en la que se van a copiar los nombres seleccionados
@@ -31,16 +31,16 @@ public class MarcoSeleccionMultiple2 extends JFrame {
         botonJButtonCopiar.addActionListener(
             new ActionListener() {
                 // maneja evento de botón
-                @Override
+                @Override 
                 public void actionPerformed(ActionEvent evento) {
-                    // agrega los valores seleccionados al modelo de lista de copias
-                    for (String valor : listaJListColores.getSelectedValuesList()) {
-                        modeloListaCopia.addElement(valor);
-                    }
+                    // Agrega los valores seleccionados al modelo de lista de copias
+                    for (String valor : listaJListColores.getSelectedValuesList()) { //Obtiene la lista con los colores seleccionados
+                        modeloListaCopia.addElement(valor); //Agrega los colores seleccionados a la lista de copias sin eliminar los colores anteriores
+                    }//Bucle que permite iterar/recorre la lista de colores seleccionados 
                 }
             }
-        );
-
+        );  // fin de la clase interna anónima
+            
         add(botonJButtonCopiar); // agrega el botón copiar a JFrame
 
         modeloListaCopia = new DefaultListModel<>(); // modelo para la lista de copias
